@@ -3,22 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="campos.css">
     <title>Calculadora</title>
 </head>
 <body>
-    <div class="calculadora">
 
-      <div class="telaAlign">
-        <div id="tela"></div>
-      </div>
-      
-      <div class="buttonsAlign">
-        <div class="operacao" id="op1">soma</div>
-        <div class="operacao" id="op2">subtração</div>
-        <div class="operacao" id="op3">multiplicação</div>
-        <div class="operacao" id="op4">determinante</div>
-      </div>
+    <div class="calculadora">
+        <div class="telaAlign">
+                <div id="tela">
+                    <!-- primeira matriz -->
+                    <div class="campo">
+                        <input id="n1" type="text">
+                        <input id="n2" type="text">
+                        <input id="n3" type="text">
+                        <input id="n4" type="text">
+                    </div>
+                    <!-- segundamatriz -->
+                    <div class="campo" id="campo2">
+                        <input id="m1" type="text">
+                        <input id="m2" type="text">
+                        <input id="m3" type="text">
+                        <input id="m4" type="text">
+                    </div>
+                    <!-- resultado -->
+                    <div class="campo" >
+                        <input id="r1" type="text" readonly>
+                        <input id="r2" type="text" readonly>
+                        <input id="r3" type="text" readonly>
+                        <input id="r4" type="text" readonly>
+                    </div>
+                </div>
+        </div>
+        
+        <div class="buttonsAlign">
+            <div class="operacao" id="op1">soma</div>
+            <div class="operacao" id="op2">subtração</div>
+            <div class="operacao" id="op3">multiplicação</div>
+            <div class="operacao" id="op4">determinante</div>
+        </div>
+        <div id="reset">nova operação</div>
     </div>
 </body>
+
     <script src="script.js"></script>
 </html>
